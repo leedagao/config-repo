@@ -25,5 +25,5 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 girl:
-  name: lili
+  name: yy
   age: 38
