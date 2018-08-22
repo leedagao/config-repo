@@ -25,5 +25,5 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 girl:
-  name: WW
+  name: ee
   age: 31
