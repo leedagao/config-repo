@@ -1,0 +1,29 @@
+env:
+  dev3
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    ## 大小写都可以
+    url: jdbc:mysql://localhost:3306/springcloud_SELL?characterencoding=utf-8&usessl=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+      
+server:
+  port: 8083
+eureka:
+  instance:
+    hostname: order
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+PRODUCT:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+girl:
+  name: lili
+  age: 18

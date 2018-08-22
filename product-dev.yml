@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+    url: jdbc:mysql://localhost:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true  # 显示sql语句，用于调试
+
+  rabbitmq:
+    host: ubuntu
+    port: 5672
+    username: guest
+    password: guest
+# 如果使用restTemplate， LoadBalancerClient时，一定不能配置。 所以这个配置没任何好处!
+#  instance:
+#    hostname: myproduct
+
